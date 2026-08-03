@@ -1,5 +1,3 @@
-const base = import.meta.env.BASE_URL;
-
 function Hero() {
   return (
     <section className="hero">
@@ -12,16 +10,15 @@ function Hero() {
           Hi, I'm <span>Kavindi Karunaratne</span>
         </h1>
 
-        <h2>
-          Business Information Systems Graduate
-        </h2>
+        <h2>Business Information Systems Graduate</h2>
 
         <p className="hero-description">
           Recent Bachelor of Information Technology graduate specializing in
           Business Information Systems with experience in business analysis,
-          technology consulting, QA testing, stakeholder collaboration, and
-          operations. I enjoy transforming business problems into practical,
-          user-focused technology solutions.
+          technology consulting, QA testing, stakeholder collaboration,
+          operations, and project coordination. Passionate about solving
+          business problems through technology and creating efficient,
+          user-focused solutions.
         </p>
 
         <div className="hero-buttons">
@@ -30,19 +27,19 @@ function Hero() {
           </a>
 
           <a
-            href={`${base}resume.pdf`}
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
             target="_blank"
             rel="noopener noreferrer"
             className="btn-secondary"
           >
-            Download Resume
+            Resume
           </a>
         </div>
       </div>
 
       <div className="hero-right">
         <img
-          src={`${base}profile.jpg`}
+          src="/profile.jpg"
           alt="Kavindi Karunaratne"
           className="profile-image"
         />

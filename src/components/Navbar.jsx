@@ -7,13 +7,11 @@ function Navbar() {
 
   return (
     <header className="navbar">
-
       <div className="logo">
         Kavindi<span>.</span>
       </div>
 
       <nav className={menuOpen ? "nav-links active" : "nav-links"}>
-
         <a href="#home" onClick={closeMenu}>
           Home
         </a>
@@ -37,17 +35,7 @@ function Navbar() {
         <a href="#contact" onClick={closeMenu}>
           Contact
         </a>
-
       </nav>
-
-      <a
-        className="resume-btn"
-        href="/resume.pdf"
-        target="_blank"
-        rel="noreferrer"
-      >
-        Resume
-      </a>
 
       <button
         className="menu-btn"
@@ -55,7 +43,6 @@ function Navbar() {
       >
         ☰
       </button>
-
     </header>
   );
 }

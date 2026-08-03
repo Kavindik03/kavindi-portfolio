@@ -214,23 +214,7 @@ a{
 
 }
 
-.resume-btn{
 
-  padding:12px 26px;
-
-  border-radius:12px;
-
-  background:var(--primary);
-
-  transition:.3s;
-
-}
-
-.resume-btn:hover{
-
-  background:#2563eb;
-
-}
 
 .menu-btn{
 
@@ -896,11 +880,6 @@ a{
 
 }
 
-.resume-btn{
-
-    display:none;
-
-}
 
 .section-title h2{
 
