@@ -1,9 +1,9 @@
+const base = import.meta.env.BASE_URL;
+
 function Hero() {
   return (
     <section className="hero">
-
       <div className="hero-left">
-
         <p className="hero-tag">
           👋 Welcome to my portfolio
         </p>
@@ -17,42 +17,36 @@ function Hero() {
         </h2>
 
         <p className="hero-description">
-          Recent Information Technology graduate specializing in Business
-          Information Systems with experience in business analysis,
-          technology consulting, QA testing, data reporting, and stakeholder
-          collaboration. Passionate about solving business problems through
-          technology and creating efficient, user-focused solutions.
+          Recent Bachelor of Information Technology graduate specializing in
+          Business Information Systems with experience in business analysis,
+          technology consulting, QA testing, stakeholder collaboration, and
+          operations. I enjoy transforming business problems into practical,
+          user-focused technology solutions.
         </p>
 
         <div className="hero-buttons">
-
           <a href="#projects" className="btn-primary">
             View Projects
           </a>
 
           <a
-            href="/resume.pdf"
+            href={`${base}resume.pdf`}
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             className="btn-secondary"
           >
             Download Resume
           </a>
-
         </div>
-
       </div>
 
       <div className="hero-right">
-
         <img
-          src="/profile.jpg"
+          src={`${base}profile.jpg`}
           alt="Kavindi Karunaratne"
           className="profile-image"
         />
-
       </div>
-
     </section>
   );
 }
